@@ -1,0 +1,146 @@
+:root {
+  --primary-color-dark: blue;
+  --primary-color-light: aliceblue;
+  --white: #ffffff;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgba(229, 228, 228, 0.559);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 1px 3px 10px 1px rgba(225, 224, 224, 0.589);
+}
+.logo {
+  margin-left: 100px;
+}
+.profile {
+  margin-right: 100px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Hero Section  */
+.hero {
+  margin-top: 70px;
+  display: flex;
+  height: calc(100dvh - 70px);
+  align-items: center;
+}
+
+.hero .hero_left {
+  width: 50%;
+  padding: 30px;
+}
+
+.hero .hero_right {
+  width: 50%;
+  height: 100%;
+}
+
+.hero_left_heading {
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero_left_description {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color-dark);
+}
+
+.hero_left :last-child {
+  margin-top: 20px;
+}
+
+/* Unlock your potential */
+.potential {
+  background-color: var(--primary-color-light);
+  padding: 20px 0;
+}
+
+.potential h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.potential_flex {
+  display: flex;
+  align-items: center;
+  min-height: 40dvh;
+}
+.potential p {
+  font-size: 20px;
+  width: 80%;
+}
+
+.potential_left {
+  width: 50%;
+}
+
+.potential_right {
+  width: 50%;
+  height: auto;
+}
+
+/* Feature */
+.features h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.feature_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  column-gap: 20px;
+}
+
+.feature {
+  background-color: var(--primary-color-dark);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.feature_heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+}
+
+footer .container {
+  display: flex;
+  color: white;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+}
+.quick_links {
+  display: flex;
+  gap: 100px;
+}
+
+.quick_links .links p {
+  font-size: 12px;
+}
