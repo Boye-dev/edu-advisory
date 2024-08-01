@@ -24,31 +24,37 @@ body {
   height: 70px;
   box-shadow: 1px 3px 10px 1px rgba(225, 224, 224, 0.589);
 }
-.logo {
+.navbar .logo {
   margin-left: 100px;
 }
-.profile {
+.navbar .profile {
   margin-right: 100px;
   display: flex;
   gap: 10px;
 }
-
+.navbar .hamburger {
+  margin-right: 100px;
+  display: none;
+}
 /* Hero Section  */
 .hero {
   margin-top: 70px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
   height: calc(100dvh - 70px);
   align-items: center;
 }
 
 .hero .hero_left {
-  width: 50%;
-  padding: 30px;
+  width: 100%;
+  padding: 30px 0;
 }
 
 .hero .hero_right {
-  width: 50%;
+  width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .hero_left_heading {
@@ -61,6 +67,9 @@ body {
   font-size: 20px;
   margin: 0;
   padding: 0;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
   color: var(--primary-color-dark);
 }
 
@@ -80,7 +89,9 @@ body {
 }
 
 .potential_flex {
-  display: flex;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+
   align-items: center;
   min-height: 40dvh;
 }
@@ -90,11 +101,11 @@ body {
 }
 
 .potential_left {
-  width: 50%;
+  width: 100%;
 }
 
 .potential_right {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -125,22 +136,79 @@ body {
 footer {
   background-color: black;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   margin-top: 100px;
 }
 
 footer .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
   color: white;
   align-items: center;
   height: 100%;
   justify-content: space-around;
+  padding-top: 30px;
 }
 .quick_links {
-  display: flex;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+
+  column-gap: 40px;
 }
 
 .quick_links .links p {
-  font-size: 12px;
+  font-size: 11px;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 0 10px;
+  }
+  .navbar .logo {
+    margin-left: 10px;
+  }
+  .navbar .hamburger {
+    margin-right: 10px;
+    display: block;
+  }
+
+  .hero {
+    grid-template-columns: 12fr;
+    row-gap: 20px;
+  }
+  .navbar .profile {
+    display: none;
+  }
+
+  .hero_left_heading {
+    font-size: 40px;
+  }
+  .feature_grid {
+    grid-template-columns: 12fr;
+    row-gap: 20px;
+  }
+  .potential_flex {
+    row-gap: 20px;
+    grid-template-columns: 12fr;
+  }
+  .potential p {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  footer .container {
+    grid-template-columns: 12fr;
+  }
+  footer .container .logo {
+    text-align: center;
+    width: 100%;
+  }
+  .quick_links {
+    grid-template-columns: 12fr;
+
+    row-gap: 20px;
+  }
+  .quick_links .links p {
+    text-align: center;
+  }
 }
