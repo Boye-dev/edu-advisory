@@ -8,7 +8,7 @@ class SideBar extends HTMLElement {
     <div class="sidebar active">
       <div class="siddebar_logo">
       <div style="display: flex">
-        <img src="/src/images/logo.png" width="70px" h="100%" />
+        <img src="../src/images/logo.png" width="70px" h="100%" />
         <p>Edu Bridge</p>
       </div>
 
@@ -88,7 +88,7 @@ class NavBar extends HTMLElement {
     <div class="sidebar_navbar">
     <div class="sidebar_navbar_flex">
       <div class="sidebar_navbar_profile">
-        <img src="/src/images/background.jpeg" />
+        <img src="../src/images/background.jpeg" />
         <p>Oyelola Adeboye</p>
       </div>
       <i
