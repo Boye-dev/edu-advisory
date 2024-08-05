@@ -1,5 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color-dark: #621b40;
+  --primary-color-light: #8e285d;
+  --white: #ffffff;
+  --shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.293);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+form > * {
+  margin-bottom: 20px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  width: auto;
+}
 /* Button */
-.button {
+button {
   outline: none;
   border: none;
   background-color: var(--primary-color-dark);
@@ -13,12 +40,124 @@
   opacity: 1;
   transition: all 0.2s ease-in;
 }
-.button:hover {
+button:hover {
   opacity: 0.7;
 }
+button:focus {
+  border: 2px solid var(--primary-color-dark);
+  box-shadow: 1px 3px 10px 1px var(--primary-color-dark);
+}
 
+button.fullWidth {
+  width: 100%;
+}
 .outline {
   background-color: transparent;
   border: 1px solid var(--primary-color-dark);
   color: var(--primary-color-dark);
+}
+
+.text_input_label {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  display: block;
+}
+.text_input_label.asterisk::after {
+  content: "*";
+  color: red;
+}
+
+input {
+  font-size: 13px;
+}
+
+input::placeholder,
+select::placeholder {
+  color: gray;
+}
+input[type="text"],
+input[type="password"],
+input[type="datetime-local"],
+input[type="datetime-local"],
+select {
+  background-color: white;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="datetime-local"]:focus,
+input[type="password"]:focus {
+  border: 2px solid var(--primary-color-dark);
+}
+
+input.fullWidth,
+select.fullWidth {
+  width: 100%;
+}
+
+.modal {
+  padding: 0 10px;
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.521);
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  display: none;
+}
+
+.modal .content {
+  background-color: white;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+}
+.table_div {
+  overflow: auto;
+  width: 100%;
+  background-color: white;
+}
+.table_div::-webkit-scrollbar {
+  display: none;
+  background-color: none;
+}
+
+table {
+  width: 100%;
+  max-height: 400px;
+
+  border-collapse: collapse;
+}
+th {
+  font-size: 13px;
+  text-align: left;
+  min-width: 250px;
+}
+tbody tr,
+thead tr {
+  width: 100%;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+tbody tr {
+  cursor: pointer;
+}
+tbody td,
+th {
+  padding: 15px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+tbody tr:last-child {
+  border-bottom: none;
 }

@@ -1,14 +1,3 @@
-:root {
-  --primary-color-dark: blue;
-  --primary-color-light: aliceblue;
-  --white: #ffffff;
-}
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
 .container {
   margin: 0 100px;
 }
@@ -41,8 +30,9 @@ body {
   margin-top: 70px;
   display: grid;
   grid-template-columns: 6fr 6fr;
-  height: calc(100dvh - 70px);
+  min-height: calc(100dvh - 70px);
   align-items: center;
+  padding: 40px 0;
 }
 
 .hero .hero_left {
@@ -79,7 +69,6 @@ body {
 
 /* Unlock your potential */
 .potential {
-  background-color: var(--primary-color-light);
   padding: 20px 0;
 }
 
@@ -91,7 +80,7 @@ body {
 .potential_flex {
   display: grid;
   grid-template-columns: 6fr 6fr;
-
+  gap: 20px;
   align-items: center;
   min-height: 40dvh;
 }
@@ -110,8 +99,16 @@ body {
 }
 
 /* Feature */
+.features {
+  background-color: var(--primary-color-light);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+}
 .features h1 {
   font-size: 50px;
+  margin: 0;
   text-align: center;
 }
 
@@ -119,13 +116,19 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 4fr);
   column-gap: 20px;
+  margin-top: 20px;
 }
 
 .feature {
-  background-color: var(--primary-color-dark);
-  color: white;
+  background-color: white;
+  color: var(--primary-color-light);
   border-radius: 10px;
-  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 0 20px;
 }
 .feature_heading {
   font-size: 20px;

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/56e64f4edd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/sidebar.css" />
+    <link rel="stylesheet" href="/src/css/resource-library.css" />
+
+    <title>Resource Library | Edu bridge</title>
+  </head>
+  <body>
+    <div class="resource">
+      <my-sidebar></my-sidebar>
+      <div class="resource_main">
+        <my-navbar></my-navbar>
+        <div style="padding: 20px">
+          <div class="resource_top">
+            <h1>Resource Library</h1>
+            <button class="add_resource_button">Add Resource</button>
+          </div>
+          <div class="resource_filter">
+            <input type="text" placeholder="Search by Name" />
+            <select class="">
+              <option>Select Category</option>
+            </select>
+            <input type="datetime-local" />
+          </div>
+          <div class="table_div">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Resource Link</th>
+                  <th>Created At</th>
+                  <th>Created By</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Lorem ipsun dolloipsun dolloipsun dolloipsun dollo ipsun
+                    dolloipsun dollor
+                  </td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                </tr>
+                <tr>
+                  <td>
+                    Lorem ipsun dolloipsun dolloipsun dolloipsun dollo ipsun
+                    dolloipsun dollor
+                  </td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                  <td>Lorem ipsun dollor</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book Appointment modal -->
+      <div class="modal" id="book_appointment_modal">
+        <div class="content">
+          <div class="add_resource" style="padding: 0 30px">
+            <h1>Add Resource</h1>
+            <form>
+              <div>
+                <label class="text_input_label asterisk">Name</label>
+                <input type="text" class="fullWidth" placeholder="Enter Name" />
+              </div>
+              <div>
+                <label class="text_input_label asterisk">Descrption</label>
+                <input
+                  type="text"
+                  class="fullWidth"
+                  placeholder="Enter Description"
+                />
+              </div>
+              <div>
+                <label class="text_input_label">Resource Link</label>
+                <input type="text" class="fullWidth" placeholder="Enter Url" />
+              </div>
+              <div>
+                <label class="text_input_label">Upload Resource</label>
+                <input type="file" class="fullWidth" />
+              </div>
+              <button class="fullWidth">Upload Resource</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/src/components/sidebar.js"></script>
+    <script src="/src/js/components.js"></script>
+    <script src="/src/js/resource-library.js"></script>
+  </body>
+</html>

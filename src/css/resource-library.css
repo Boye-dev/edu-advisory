@@ -1,0 +1,55 @@
+.resource {
+  display: flex;
+  width: 100%;
+}
+
+.resource_main {
+  width: calc(100% - 250px);
+}
+.resource_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resource_filter {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.resource_filter input[type="text"] {
+  width: 350px;
+}
+.resource_filter select {
+  width: 200px;
+}
+.resource_filter input[type="date"] {
+  width: 350px;
+}
+.resource_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .resource_main {
+    width: 100%;
+  }
+  .resource_top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .resource_filter input[type="text"] {
+    width: 100%;
+  }
+  .resource_filter select {
+    width: 100%;
+  }
+  .resource_filter input[type="datetime-local"] {
+    width: 100%;
+  }
+}

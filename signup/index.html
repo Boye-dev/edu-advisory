@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/components.css" />
+    <link rel="stylesheet" href="/src/css/login.css" />
+
+    <title>SignUp | Edu Bridge</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login_form">
+        <a href="/">
+          <img src="/src/images/logo.png" width="70px" h="100%"
+        /></a>
+        <h4>Sign up</h4>
+        <form>
+          <div>
+            <label class="text_input_label">First Name</label>
+            <input
+              type="text"
+              class="fullWidth"
+              placeholder="Enter First Name"
+            />
+          </div>
+          <div>
+            <label class="text_input_label">Last Name</label>
+            <input
+              type="text"
+              class="fullWidth"
+              placeholder="Enter Last Name"
+            />
+          </div>
+          <div>
+            <label class="text_input_label">Email</label>
+            <input type="text" class="fullWidth" placeholder="Enter Email" />
+          </div>
+          <div>
+            <label class="text_input_label">Password</label>
+            <input
+              type="password"
+              class="fullWidth"
+              placeholder="Enter Password"
+            />
+          </div>
+          <div>
+            <label class="text_input_label">Profile Picture</label>
+            <input
+              type="file"
+              accept="image/*"
+              class="fullWidth"
+              placeholder="Enter Password"
+            />
+          </div>
+          <button class="fullWidth">Sign up</button>
+          <a href="/login/"
+            ><p>Already have an account? <span>Sign In</span></p></a
+          >
+        </form>
+      </div>
+    </div>
+    <div class="background-form"></div>
+    <script src="/src/js/components.js"></script>
+  </body>
+</html>
