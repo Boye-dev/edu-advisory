@@ -32,10 +32,15 @@
   grid-template-columns: repeat(2, 4fr);
   gap: 10px;
 }
-
+.add_resource {
+  min-width: 500px;
+}
 @media screen and (max-width: 900px) {
   .resource_main {
     width: 100%;
+  }
+  .add_resource {
+    min-width: 100%;
   }
   .resource_top {
     display: flex;

@@ -9,7 +9,7 @@ class SideBar extends HTMLElement {
       <div class="siddebar_logo">
       <div style="display: flex">
         <img src="../src/images/logo.png" width="70px" h="100%" />
-        <p>Edu Bridge</p>
+        <p>Study Pathway</p>
       </div>
 
         <i

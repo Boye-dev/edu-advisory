@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="stylesheet" href="./src/css/components.css" />
 
-    <title>Edu Bridge</title>
+    <title>Study Pathway</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -15,25 +15,46 @@
         <img src="./src/images/logo.png" width="70px" h="100%" />
       </div>
       <div class="profile">
-        <button class="button">Login</button>
-        <button class="button outline">Sign Up</button>
+        <a href="/login/"> <button class="button">Login</button></a>
+        <a href="/signup/"> <button class="button outline">Sign Up</button></a>
       </div>
       <div class="hamburger">
-        <img src="./src/images/hamburger-close.webp." width="30px" h="100%" />
+        <i
+          class="fa-solid fa-bars"
+          style="font-size: 30px; cursor: pointer"
+          id="small_nav_hamburger_home"
+        ></i>
+      </div>
+      <div class="small_nav">
+        <div
+          style="
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          "
+        >
+          <a href="/login/"> <button class="button fullWidth">Login</button></a>
+          <a href="/signup/">
+            <button class="button outline fullWidth">Sign Up</button></a
+          >
+        </div>
       </div>
     </div>
     <!-- Hero Section -->
     <div class="container">
       <div class="hero">
         <div class="hero_left">
-          <h1 class="hero_left_heading">Welcome to</h1>
-          <h1 class="hero_left_heading">Edu Bridge</h1>
           <p class="hero_left_description">
-            Your One-Stop Platform for Academic,
+            <span>Study pathway</span> is an all in one platform designed to
+            support students in achieving their academic aspirations while
+            maintaining a balanced lifestyle.
           </p>
           <p class="hero_left_description">
-            Financial, and Mental Well-being Support
+            Our platform offers tailored guidance, essential resources, and
+            dynamic tools to help you excel.
           </p>
+
           <a href="/login/"><button class="button">Get Started</button></a>
         </div>
         <div class="hero_right">
@@ -81,14 +102,11 @@
           </div>
 
           <div class="potential_left">
-            <p class="">
-              EduSupport is a comprehensive platform designed to support
-              students in achieving their academic goals while maintaining a
-              healthy work-life balance.
-            </p>
-            <p class="">
-              Our platform offers personalized guidance, resources, and tools to
-              help you succeed.
+            <p class="hero_left_description">
+              Built on insights from extensive research, study pathway addresses
+              the unique challenges faced by international students, providing
+              personalized educational advisory, financial planning, and mental
+              health support, to ensure a holistic approach to student success.
             </p>
           </div>
         </div>
@@ -100,7 +118,7 @@
       <div class="container">
         <div class="logo">
           <img src="./src/images/logo.png" width="70px" h="100%" />
-          <h1>Edu Bridge</h1>
+          <h1>Study Pathway</h1>
         </div>
         <div class="quick_links">
           <div class="links">
@@ -123,8 +141,10 @@
       </div>
     </footer>
   </body>
+
   <script
     src="https://kit.fontawesome.com/56e64f4edd.js"
     crossorigin="anonymous"
   ></script>
+  <script src="./src/js/index.js"></script>
 </html>
