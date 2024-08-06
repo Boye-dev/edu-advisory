@@ -1,44 +1,45 @@
-.academic {
+.scholarships {
   display: flex;
   width: 100%;
 }
 
-.academic_main {
+.scholarships_main {
   width: calc(100% - 250px);
 }
-.academic_main_modal {
+.scholarships_main_modal {
   width: 100%;
 }
-.academic_filter {
+.scholarships_filter {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
-.academic_filter input[type="text"] {
+.scholarships_filter input[type="text"] {
   width: 350px;
 }
-.academic_filter select {
+.scholarships_filter select {
   width: 200px;
 }
-.academic_grid {
+.scholarships_grid {
   display: grid;
-  grid-template-columns: repeat(2, 6fr);
-  gap: 15px;
+  grid-template-columns: repeat(3, 4fr);
+  gap: 10px;
 }
-.academic_counsellor {
+.scholarships_counsellor {
   cursor: pointer;
   box-shadow: var(--shadow);
-  padding: 20px 0px;
+  padding: 20px 0;
+  gap: 10px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   width: 100%;
 }
-.academic_counsellor_book {
+.scholarships_counsellor_book {
   cursor: pointer;
   box-shadow: var(--shadow);
   padding: 20px;
@@ -50,7 +51,7 @@
   width: 100%;
   justify-content: space-between;
 }
-.academic_counsellor_book img {
+.scholarships_counsellor_book img {
   width: 90px;
   height: 90px;
   border-radius: 100%;
@@ -61,66 +62,36 @@
   align-items: center;
   width: 40%;
 }
-.academic_counsellor img {
+.scholarships_counsellor img {
   width: 70px;
   height: 70px;
   border-radius: 100%;
 }
 
-.academic_counsellor_name {
+.scholarships_counsellor_name {
   text-align: center;
   margin: 0;
   margin-top: 20px;
 }
 
-.academic_counsellor_occupation {
+.scholarships_counsellor_occupation {
   text-align: center;
   margin: 0;
   color: grey;
   font-size: 12px;
 }
 
-.academic_data {
-  gap: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.academic_data div {
-  display: flex;
-  align-items: center;
-}
-.academic_data div p {
-  font-size: 12px;
-  color: grey;
-  margin-left: 10px;
-}
-
-.academic_bio {
-  font-size: 12px;
-  margin-left: 10px;
-  text-align: center;
-}
-
 @media screen and (max-width: 900px) {
-  .academic_main {
+  .scholarships_main {
     width: 100%;
   }
-  .academic_filter input[type="text"] {
+  .scholarships_filter input[type="text"] {
     width: 100%;
   }
-  .academic_filter select {
+  .scholarships_filter select {
     width: 100%;
   }
-  .academic_grid {
+  .scholarships_grid {
     grid-template-columns: 12fr;
-  }
-  .academic_counsellor_book {
-    justify-content: center;
-  }
-  .acaddemic_book_image {
-    display: flex;
-    align-items: center;
-    width: 100%;
   }
 }

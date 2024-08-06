@@ -45,10 +45,12 @@ class SideBar extends HTMLElement {
         <p>Budgeting Tools</p>
       </div>
       </a>
+      <a href="/scholarships-and-grants" style="color:black">
       <div class="sidebar_items">
       <i class="fa-brands fa-google-scholar"></i>
         <p>Scholarship & Grant</p>
       </div>
+      </a>
       <a href="/student-loan" style="color:black">
       <div class="sidebar_items">
       <i class="fa-solid fa-landmark"></i>
