@@ -58,11 +58,13 @@ class SideBar extends HTMLElement {
       </div>
       </a>
       <p>MENTAL HEALTH SUPPORT</p>
+      <a href="/support-groups" style="color:black">
      
       <div class="sidebar_items">
       <i class="fa-solid fa-people-group"></i>
         <p>Peer Support Groups</p>
       </div>
+      </a>
     
 
       <p>SETTINGS</p>
