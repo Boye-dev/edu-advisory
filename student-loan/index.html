@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/56e64f4edd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../src/css/components.css" />
+    <link rel="stylesheet" href="../src/css/sidebar.css" />
+    <link rel="stylesheet" href="../src/css/student-loan.css" />
+
+    <title>Student Loan Advice | Study Pathway</title>
+  </head>
+  <body>
+    <div class="student">
+      <my-sidebar></my-sidebar>
+      <div class="student_main">
+        <my-navbar></my-navbar>
+        <div style="padding: 20px">
+          <div class="student_top">
+            <h1>Student Loan Advice</h1>
+          </div>
+
+          <div class="loan_grid">
+            <div class="loan_calculator">
+              <form>
+                <div class="student_fees">
+                  <label class="text_input_label">Loan amount</label>
+                  <input
+                    type="number"
+                    class="fullWidth"
+                    placeholder="Enter Loan amount"
+                  />
+                </div>
+                <div class="student_fees">
+                  <label class="text_input_label">Loan term in years</label>
+                  <input
+                    type="number"
+                    class="fullWidth"
+                    placeholder="Enter Loan term in years"
+                  />
+                </div>
+                <div class="student_fees">
+                  <label class="text_input_label">Loan term in months</label>
+                  <input
+                    type="number"
+                    class="fullWidth"
+                    placeholder="Enter Loan term in months"
+                  />
+                </div>
+                <div class="student_fees">
+                  <label class="text_input_label">Interest rate per year</label>
+                  <input
+                    type="number"
+                    class="fullWidth"
+                    placeholder="Enter Loan term in months"
+                  />
+                </div>
+                <button class="fullWidth">Calculate</button>
+              </form>
+            </div>
+            <div class="loan_results">
+              <p>Monthly Payments</p>
+              <h1>$92.44</h1>
+              <div>
+                <p>Total Principal Paid</p>
+                <p>$5000</p>
+              </div>
+              <hr />
+              <div>
+                <p>Total Interest Paid</p>
+                <p>$5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/components/sidebar.js"></script>
+    <script src="../src/js/components.js"></script>
+    <script src="../src/js/student-loan.js"></script>
+  </body>
+</html>

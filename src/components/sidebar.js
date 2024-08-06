@@ -39,18 +39,22 @@ class SideBar extends HTMLElement {
       </a>
 
       <p>FINANCIAL ADVISORY</p>
+      <a href="/budgeting-tools" style="color:black">
       <div class="sidebar_items">
       <i class="fa-solid fa-money-bill"></i>
         <p>Budgeting Tools</p>
       </div>
+      </a>
       <div class="sidebar_items">
       <i class="fa-brands fa-google-scholar"></i>
         <p>Scholarship & Grant</p>
       </div>
+      <a href="/student-loan" style="color:black">
       <div class="sidebar_items">
       <i class="fa-solid fa-landmark"></i>
         <p>Student Loan Advice</p>
       </div>
+      </a>
       <p>MENTAL HEALTH SUPPORT</p>
      
       <div class="sidebar_items">
@@ -109,7 +113,7 @@ const sideBarHamburger = document.getElementById("sidebar_hamburger");
 const sidebar = document.querySelector(".sidebar");
 const sidebarItems = document.querySelectorAll(".sidebar a");
 sidebarItems.forEach((item) => {
-  if (item.href === location.href.slice(0, location.href.length - 1)) {
+  if (location.href.slice(0, location.href.length - 1).includes(item.href)) {
     item.firstElementChild.style.color = "#621b40";
     item.firstElementChild.lastElementChild.style.fontWeight = "600";
   }

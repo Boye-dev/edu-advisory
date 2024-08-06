@@ -1,0 +1,138 @@
+.budget {
+  display: flex;
+  width: 100%;
+}
+
+.budget_main {
+  width: calc(100% - 250px);
+}
+.budget_stepper {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 10fr;
+  width: 100%;
+}
+
+.budget_stepper_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.budget_stepper_item:hover .budget_stepper_description {
+  text-decoration: underline;
+  color: var(--primary-color-dark) !important;
+}
+.budget_stepper_item:hover .budget_stepper_number {
+  background-color: var(--primary-color-dark) !important;
+}
+.budget_stepper_line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+.budget_stepper_item_body {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+}
+.budget_stepper_item_body hr {
+  background-color: black;
+  width: 2px;
+  height: 80px;
+  margin: 0;
+}
+.budget_main_stepper :nth-child(5) hr {
+  display: none;
+}
+.budget_stepper_number {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.budget_stepper_form {
+  display: none;
+}
+.tab0_header {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 600;
+}
+.budget_title {
+  width: 500px;
+}
+.budget_other {
+  display: block;
+  margin-bottom: 10px;
+  width: 500px;
+}
+.budget_fees {
+  width: 300px;
+}
+.budget_buttons {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  gap: 20px;
+  padding: 20px;
+  flex-direction: row;
+}
+.budget_buttons button {
+  width: 200px;
+}
+.budget_stepper_body {
+  margin: 0px 0 150px;
+}
+@media screen and (max-width: 900px) {
+  .budget_main {
+    width: 100%;
+  }
+  .budget_stepper {
+    grid-template-columns: 12fr;
+  }
+  .budget_stepper_line {
+    display: flex;
+    margin-right: 10px;
+    flex-direction: row;
+  }
+  .budget_main_stepper :nth-child(5) hr {
+    display: block;
+  }
+  .budget_stepper_item_body hr {
+    width: 100px;
+    height: 2px;
+    margin: 0;
+  }
+  .budget_main_stepper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .budget_stepper_body {
+    margin: 20px 0 150px;
+  }
+  .budget_title {
+    width: 100%;
+  }
+  .budget_other {
+    width: 100%;
+  }
+  .budget_fees {
+    width: calc(100% - 150px);
+  }
+  .budget_buttons {
+    flex-direction: column;
+  }
+  .budget_buttons button {
+    width: 100%;
+  }
+}
