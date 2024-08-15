@@ -1,0 +1,144 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+}
+
+.dashboard_main {
+  width: calc(100% - 250px);
+}
+.dashboard_main_modal {
+  width: 100%;
+}
+.dashboard_filter {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.dashboard_filter input[type="text"] {
+  width: 350px;
+}
+.dashboard_filter select {
+  width: 200px;
+}
+.dashboard_grid {
+  display: grid;
+  grid-template-columns: 12fr;
+  gap: 15px;
+}
+.dashboard_counsellor {
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-sizing: border-box; */
+  width: 100%;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.dashbboard_main_body {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.dashboard_counsellor_book {
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.dashboard_counsellor_book img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.acaddemic_book_image {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.dashboard_counsellor img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.dashboard_counsellor_name {
+  margin: 0;
+  margin-top: 20px;
+}
+
+.dashboard_counsellor_occupation {
+  margin: 0;
+  color: grey;
+  font-size: 12px;
+}
+
+.dashboard_data {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+.dashboard_data div {
+  display: flex;
+  align-items: center;
+}
+.dashboard_data div p {
+  font-size: 12px;
+  color: grey;
+  margin-left: 10px;
+}
+
+.dashboard_bio {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard_main {
+    width: 100%;
+  }
+  .dashboard_filter input[type="text"] {
+    width: 100%;
+  }
+  .dashboard_filter select {
+    width: 100%;
+  }
+  .dashboard_grid {
+    grid-template-columns: 12fr;
+  }
+  .dashbboard_main_body {
+    justify-content: center;
+  }
+  .dashboard_counsellor {
+    justify-content: center;
+  }
+  .dashboard_counsellor_book {
+    justify-content: center;
+  }
+  .dashbboard_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard_bio {
+    text-align: center;
+  }
+  .acaddemic_book_image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}

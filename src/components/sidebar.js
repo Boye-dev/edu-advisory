@@ -1,3 +1,121 @@
+class SideBar extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
+     <div class="sidebar active">
+        <div class="siddebar_logo">
+          <div style="display: flex;align-items:center">
+            <img src="../src/images/logo.png" width="70px" h="100%" />
+            <p>LearnBeta</p>
+          </div>
+
+          <i
+            class="fa-solid fa-bars"
+            style="font-size: 30px; cursor: pointer"
+            id="sidebar_hamburger"
+          ></i>
+        </div>
+        <a href="/dashboard" style="color: black">
+          <div class="sidebar_items ">
+            <i class="fa-solid fa-house"></i>
+            <p>Dashboard</p>
+          </div>
+        </a>
+        <p>EDUCATIONAL ADVISORY</p>
+        <a href="/counselling" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-person-chalkboard"></i>
+            <p>Counselling</p>
+          </div>
+        </a>
+        <a href="/course-selection" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-book"></i>
+            <p>​Course Selection</p>
+          </div>
+        </a>
+        <a href="/resource-library" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-file"></i>
+            <p>Resource Library</p>
+          </div>
+        </a>
+
+        <p>FINANCIAL ADVISORY</p>
+        <a href="/budgeting-tools" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-money-bill"></i>
+            <p>Budgeting Tools</p>
+          </div>
+        </a>
+        <a href="/scholarships-and-grants" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-brands fa-google-scholar"></i>
+            <p>Scholarship & Grant</p>
+          </div>
+        </a>
+        <a href="/student-loan" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-landmark"></i>
+            <p>Student Loan Advice</p>
+          </div>
+        </a>
+        <p>MENTAL HEALTH SUPPORT</p>
+        <a href="/support-groups" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-people-group"></i>
+            <p>Peer Support Groups</p>
+          </div>
+        </a>
+
+        <p>SETTINGS</p>
+        <a href="/profile" style="color: black">
+          <div class="sidebar_items">
+            <i class="fa-solid fa-user"></i>
+            <p>Profile</p>
+          </div>
+        </a>
+        <div class="sidebar_items">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <a href="/login" style="color: black">
+            <p>Logout</p>
+          </a>
+        </div>
+      </div>
+          `;
+  }
+}
+
+customElements.define("my-sidebar", SideBar);
+
+class NavBar extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
+     <div class="sidebar_navbar">
+          <div class="sidebar_navbar_flex">
+            <div class="sidebar_navbar_profile">
+              <img src="../src/images/background.jpeg" />
+              <p>Oyelola Adeboye</p>
+            </div>
+            <i
+              class="fa-solid fa-bars"
+              style="font-size: 30px; cursor: pointer"
+              id="hamburger"
+            ></i>
+          </div>
+        </div>
+          `;
+  }
+}
+customElements.define("my-navbar", NavBar);
+
 const hamburger = document.getElementById("hamburger");
 const sideBarHamburger = document.getElementById("sidebar_hamburger");
 const sidebar = document.querySelector(".sidebar");

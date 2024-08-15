@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/56e64f4edd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../src/css/components.css" />
+    <link rel="stylesheet" href="../src/css/sidebar.css" />
+    <link rel="stylesheet" href="../src/css/academic-counselling.css" />
+
+    <title>Counselling | LearnBeta</title>
+  </head>
+  <body>
+    <div class="academic">
+      <my-sidebar></my-sidebar>
+      <div class="academic_main">
+        <my-navbar></my-navbar>
+        <div style="padding: 20px">
+          <h1>Book Counsellor</h1>
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a
+                class="nav-link text-black fw-light fs-5"
+                aria-current="page"
+                href="#"
+                >Financial Advisory</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black fw-light fs-5" href="#"
+                >Educational Advisory</a
+              >
+            </li>
+            <li class="nav-item mb-xxl-5">
+              <a class="nav-link text-black fw-light fs-5" href="#"
+                >Mental Health Support</a
+              >
+            </li>
+          </ul>
+          <div class="academic_filter">
+            <input type="text" placeholder="Search by Name, Email" />
+            <select>
+              <option>Select Location</option>
+            </select>
+            <button>Apply Filter</button>
+          </div>
+          <div class="academic_grid">
+            <div class="academic_counsellor">
+              <img src="../src/images/background.jpeg" />
+              <p class="academic_counsellor_name">Oyelola Adeboye</p>
+              <p class="academic_counsellor_occupation">Software Engineer</p>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>samuel@gmail.com</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+55512222333</p>
+                </div>
+              </div>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>United Kingdom</p>
+                </div>
+                <div>
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Boye Dev</p>
+                </div>
+              </div>
+              <p class="academic_bio">
+                Llorem ipsun dollor jksdjka jnjknsdk jksdjka jnjknsdkjksdjka
+                jnjknsdkdbnasjk...
+              </p>
+
+              <button class="book_appointment">Book Session</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book Appointment modal -->
+      <div class="modal" id="book_appointment_modal">
+        <div class="content">
+          <div class="academic_main_modal" style="padding: 0 30px">
+            <h1>Book Session</h1>
+            <div class="academic_counsellor_book">
+              <div class="acaddemic_book_image">
+                <img src="../src/images/background.jpeg" />
+                <div>
+                  <p class="academic_counsellor_name">Oyelola Adeboye</p>
+                  <p class="academic_counsellor_occupation">
+                    Software Engineer
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div class="academic_data">
+                  <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>samuel@gmail.com</p>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+55512222333</p>
+                  </div>
+                </div>
+                <div class="academic_data">
+                  <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>United Kingdom</p>
+                  </div>
+                  <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <p>Boye Dev</p>
+                  </div>
+                </div>
+                <p class="academic_bio">
+                  Llorem ipsun dollor jksdjka jnjknsdk jksdjka jnjknsdkjksdjka
+                  jnjknsdkdbnasjk...
+                </p>
+              </div>
+              <div style="width: 100%">
+                <button class="fullWidth">View Profile</button>
+              </div>
+            </div>
+            <h4>Select date and Time</h4>
+            <form>
+              <input type="datetime-local" class="fullWidth" />
+              <button class="fullWidth" style="margin-top: 20px">Book</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../src/components/sidebar.js"></script>
+    <script src="../src/js/components.js"></script>
+    <script src="../src/js/academic-counselling.js"></script>
+  </body>
+</html>

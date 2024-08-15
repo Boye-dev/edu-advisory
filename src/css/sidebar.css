@@ -28,7 +28,6 @@
 }
 .sidebar_items {
   display: flex;
-  align-items: center;
 }
 
 .sidebar_items :first-child {
