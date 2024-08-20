@@ -5,7 +5,7 @@ class SideBar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-     <div class="sidebar active">
+     <div class="sidebar activeSidebar">
         <div class="siddebar_logo">
           <div style="display: flex;align-items:center">
             <img src="../src/images/logo.png" width="70px" h="100%" />
@@ -132,12 +132,12 @@ hamburger.addEventListener("click", () => {
   sideBarHamburger.classList.remove("fa-bars");
   sideBarHamburger.classList.add("fa-xmark");
 
-  sidebar.classList.toggle("active");
+  sidebar.classList.toggle("activeSidebar");
 });
 sideBarHamburger.addEventListener("click", () => {
   hamburger.classList.remove("fa-xmark");
   hamburger.classList.add("fa-bars");
   sideBarHamburger.classList.remove("fa-xmark");
   sideBarHamburger.classList.add("fa-bars");
-  sidebar.classList.toggle("active");
+  sidebar.classList.toggle("activeSidebar");
 });

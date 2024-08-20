@@ -32,39 +32,119 @@
       <div class="academic_main">
         <my-navbar></my-navbar>
         <div style="padding: 20px">
-          <h1>Book Counsellor</h1>
-          <ul class="nav nav-underline">
+          <ul class="nav nav-underline book">
             <li class="nav-item">
-              <a
-                class="nav-link text-black fw-light fs-5"
-                aria-current="page"
-                href="#"
+              <a class="nav-link text-black fw-light fs-5"
                 >Financial Advisory</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-black fw-light fs-5" href="#"
+              <a class="nav-link text-black fw-light fs-5"
                 >Educational Advisory</a
               >
             </li>
-            <li class="nav-item mb-xxl-5">
-              <a class="nav-link text-black fw-light fs-5" href="#"
+            <li class="nav-item">
+              <a class="nav-link text-black fw-light fs-5"
                 >Mental Health Support</a
               >
             </li>
           </ul>
-          <div class="academic_filter">
+          <h2 class="mt-3">Need help! talk to someone now</h2>
+
+          <div class="academic_filter mt-3">
             <input type="text" placeholder="Search by Name, Email" />
-            <select>
-              <option>Select Location</option>
-            </select>
+
             <button>Apply Filter</button>
           </div>
-          <div class="academic_grid">
+          <div
+            class="academic_grid"
+            id="Financial Advisory"
+            style="display: none"
+          >
             <div class="academic_counsellor">
               <img src="../src/images/background.jpeg" />
               <p class="academic_counsellor_name">Oyelola Adeboye</p>
-              <p class="academic_counsellor_occupation">Software Engineer</p>
+              <p class="academic_counsellor_occupation">Finacial</p>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>samuel@gmail.com</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+55512222333</p>
+                </div>
+              </div>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>United Kingdom</p>
+                </div>
+                <div>
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Boye Dev</p>
+                </div>
+              </div>
+              <p class="academic_bio">
+                Llorem ipsun dollor jksdjka jnjknsdk jksdjka jnjknsdkjksdjka
+                jnjknsdkdbnasjk...
+              </p>
+
+              <button class="book_appointment">Book Session</button>
+            </div>
+          </div>
+
+          <!-- educational -->
+          <div
+            class="academic_grid"
+            id="Educational Advisory"
+            style="display: none"
+          >
+            <div class="academic_counsellor">
+              <img src="../src/images/background.jpeg" />
+              <p class="academic_counsellor_name">Oyelola Adeboye</p>
+              <p class="academic_counsellor_occupation">Educational Advisory</p>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>samuel@gmail.com</p>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+55512222333</p>
+                </div>
+              </div>
+              <div class="academic_data">
+                <div>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>United Kingdom</p>
+                </div>
+                <div>
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Boye Dev</p>
+                </div>
+              </div>
+              <p class="academic_bio">
+                Llorem ipsun dollor jksdjka jnjknsdk jksdjka jnjknsdkjksdjka
+                jnjknsdkdbnasjk...
+              </p>
+
+              <button class="book_appointment">Book Session</button>
+            </div>
+          </div>
+
+          <!-- Mental -->
+          <div
+            class="academic_grid"
+            id="Mental Health Support"
+            style="display: none"
+          >
+            <div class="academic_counsellor">
+              <img src="../src/images/background.jpeg" />
+              <p class="academic_counsellor_name">Oyelola Adeboye</p>
+              <p class="academic_counsellor_occupation">
+                Mental Health Support
+              </p>
               <div class="academic_data">
                 <div>
                   <i class="fa-solid fa-envelope"></i>
@@ -152,6 +232,6 @@
     </div>
     <script src="../src/components/sidebar.js"></script>
     <script src="../src/js/components.js"></script>
-    <script src="../src/js/academic-counselling.js"></script>
+    <script src="../src/js/book-counselling.js"></script>
   </body>
 </html>

@@ -1,11 +1,38 @@
-const book_modal = document.querySelector("#book_appointment_modal");
-const bookButtons = document.querySelectorAll(".book_appointment");
+const tabs = document.querySelectorAll(".counsellors .nav-item .nav-link");
+const tbody = document.querySelectorAll("tbody");
 
-bookButtons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    book_modal.style.display = "flex";
-    document.body.style.position = "fixed";
-    document.body.style.overflowY = "scroll";
-    document.body.style.width = "100%";
+let activeTab = tabs[0].innerText;
+
+tabs.forEach((tab) => {
+  if (tab.innerText === activeTab) {
+    tab.classList.add("active");
+    tbody.forEach((item) => {
+      if (item.id === activeTab.toLowerCase()) {
+        item.style.display = "contents";
+      }
+    });
+  }
+
+  tab.addEventListener("click", (e) => {
+    activeTab = e.target.innerText;
+    handleClick(activeTab);
+    console.log(activeTab);
   });
 });
+const handleClick = (val) => {
+  tabs.forEach((tab) => {
+    if (tab.innerText === val) {
+      tab.classList.add("active");
+    } else {
+      tab.classList.remove("active");
+    }
+
+    tbody.forEach((item) => {
+      if (item.id === val.toLowerCase()) {
+        item.style.display = "contents";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  });
+};

@@ -81,7 +81,7 @@
     background-color: white;
     z-index: 1;
   }
-  .active {
+  .activeSidebar {
     display: none;
   }
   .sidebar p {
