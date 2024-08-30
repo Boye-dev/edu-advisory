@@ -127,7 +127,53 @@
         </div>
       </div>
     </section>
-
+    <section class="feedback">
+      <div class="container">
+        <h1>Send a Feedback</h1>
+        <form>
+          <div style="display: flex; gap: 4%; flex-wrap: wrap">
+            <div class="feedback_name">
+              <label class="text_input_label">First Name</label>
+              <input
+                type="email"
+                class="fullWidth"
+                placeholder="Enter First Name"
+              />
+            </div>
+            <div class="feedback_name">
+              <label class="text_input_label">Last Name</label>
+              <input
+                type="email"
+                class="fullWidth"
+                placeholder="Enter Last Name"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="text_input_label">Rating(1-5)</label>
+            <input
+              type="number"
+              min="1"
+              max="5"
+              minlength="1"
+              maxlength="1"
+              class="fullWidth"
+              placeholder="Enter Rating"
+            />
+          </div>
+          <div>
+            <label class="text_input_label">Comment</label>
+            <textarea
+              rows="10"
+              type="email"
+              class="fullWidth"
+              placeholder="Enter Comment"
+            ></textarea>
+          </div>
+          <button class="fullWidth">Submit</button>
+        </form>
+      </div>
+    </section>
     <!-- Footer -->
     <footer>
       <div class="container">

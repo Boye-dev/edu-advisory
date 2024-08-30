@@ -83,7 +83,7 @@ input::placeholder,
 select::placeholder {
   color: gray;
 }
-input[type="text"],
+input[type="text"],textarea,
 input[type="email"],
 input[type="number"],
 input[type="password"],
@@ -102,7 +102,7 @@ select {
   color: black;
   text-align: left;
 }
-
+textarea:focus,
 input[type="text"]:focus,
 input[type="email"],
 input[type="number"]:focus,
@@ -112,7 +112,8 @@ input[type="password"]:focus {
 }
 
 input.fullWidth,
-select.fullWidth {
+select.fullWidth ,
+textarea.fullWidth{
   width: 100%;
 }
 

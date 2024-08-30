@@ -173,6 +173,22 @@ footer .container {
   font-size: 11px;
 }
 
+.feedback {
+  padding: 20px 0;
+  background-color: var(--primary-color-light);
+
+}
+
+.feedback h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.feedback_name{
+  width: 48%;
+}
+
 @media screen and (max-width: 900px) {
   .container {
     margin: 0 10px;
@@ -230,4 +246,11 @@ footer .container {
   .quick_links .links p {
     text-align: center;
   }
+
+}
+@media screen and (max-width: 900px) {
+
+.feedback_name{
+  width: 100%;
+}
 }
