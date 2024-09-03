@@ -304,6 +304,9 @@ footer .container {
   .quick_links .links p {
     text-align: center;
   }
+  .modal-content {
+    width: 100%;
+  }
 
 }
 @media screen and (max-width: 900px) {
