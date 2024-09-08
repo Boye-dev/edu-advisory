@@ -127,7 +127,8 @@
     width: 100%;
   }
   .budget_fees {
-    width: calc(100% - 150px);
+       width: 100%;
+
   }
   .budget_buttons {
     flex-direction: column;

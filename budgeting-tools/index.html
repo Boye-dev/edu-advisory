@@ -88,14 +88,15 @@
               </div>
               <!-- Stepper Body -->
               <div class="budget_stepper_body">
-                <!-- School  -->
-                <div id="tab0" class="budget_stepper_form">
-                  <p class="tab0_header">Enter your school expenses</p>
-                  <p class="tab0_ddescription">
-                    Enter your expenses using whole numbers, then select a
-                    frequency. All fields are optional.
-                  </p>
-                  <form>
+                <form>
+                  <!-- School  -->
+                  <div id="tab0" class="budget_stepper_form">
+                    <p class="tab0_header">School expenses</p>
+                    <p class="tab0_ddescription">
+                      Enter your expenses using whole numbers, then select a
+                      frequency. All fields are optional.
+                    </p>
+
                     <div>
                       <label class="text_input_label"
                         >Give your budget a title</label
@@ -106,241 +107,74 @@
                         placeholder="Enter Title"
                       />
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Tuition</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Tuition"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Course Materials</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Course Materials"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Additional Fees</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Additional Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Laptop,tools and technology</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Additional Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
+
+                    <div>
+                      <label class="text_input_label">Tuition</label>
+                      <input
+                        class="budget_title"
+                        type="number"
+                        class="fullWidth"
+                        placeholder="Enter Tuition"
+                      />
                     </div>
 
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
+                    <div class="budget_fees">
+                      <label class="text_input_label">Course Materials</label>
+                      <input
+                        class="budget_title"
+                        type="number"
+                        class="fullWidth"
+                        placeholder="Enter Course Materials"
+                      />
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
-                </div>
 
-                <!-- Expennses  -->
-                <div id="tab1" class="budget_stepper_form">
-                  <p class="tab0_header">Estimate your housing costs</p>
-                  <p class="tab0_ddescription">
-                    Enter your expenses using whole numbers, then select a
-                    frequency. All fields are optional.
-                  </p>
-                  <form>
+                    <div class="budget_fees">
+                      <label class="text_input_label"
+                        >Laptop,tools and technology</label
+                      >
+                      <input
+                        class="budget_title"
+                        type="number"
+                        class="fullWidth"
+                        placeholder="Enter Additional Fees"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Expennses  -->
+                  <div id="tab1" class="budget_stepper_form">
+                    <p class="tab0_header">Housing costs</p>
+                    <p class="tab0_ddescription">
+                      Enter your expenses using whole numbers, then select a
+                      frequency. All fields are optional.
+                    </p>
+
                     <div>
                       <label class="text_input_label"
                         >Where will you live?</label
                       >
-                      <select class="budget_title">
-                        <option>In residence</option>
-                        <option>Offcampus</option>
-                        <option>With family and friends</option>
-                      </select>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Residence fees</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Residence fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Meal plan</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Meal plan"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Additional off-campus housing (yearly total)</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Additional off-campus "
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
 
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
+                    <div class="budget_fees">
+                      <label class="text_input_label">Rent</label>
+                      <input
+                        class="budget_title"
+                        type="number"
+                        class="fullWidth"
+                        placeholder="Enter Residence fees"
+                      />
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
+
+                    <div class="budget_fees">
+                      <label class="text_input_label">Feeding</label>
+                      <input
+                        class="budget_title"
+                        type="number"
+                        class="fullWidth"
+                        placeholder="Enter Meal plan"
+                      />
                     </div>
-                    <p class="tab0_header">Estimate your food costs</p>
+                    <p class="tab0_header">Food costs</p>
                     <p class="tab0_ddescription">
                       Enter your expenses using whole numbers, then select a
                       frequency. All fields are optional.
@@ -350,55 +184,25 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Groceries</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Groceries"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Meal-kit subscriptions</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Meal-kit subscriptions"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
                           >Cafés and coffee shops</label
                         >
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Cafés and coffee shops "
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -407,66 +211,16 @@
                           >Restaurants (dine-in, delivery or takeout)
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Restaurants 
         "
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
 
-                    <p class="tab0_header">Estimate your technology costs</p>
+                    <p class="tab0_header">Technology costs</p>
                     <p class="tab0_ddescription">
                       Enter your expenses using whole numbers, then select a
                       frequency. All fields are optional.
@@ -475,17 +229,11 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Phone</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Phone"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -494,147 +242,57 @@
                           >Streaming services
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Streaming services"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
+                  </div>
 
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                  <!-- Extras  -->
+                  <div id="tab2" class="budget_stepper_form">
+                    <p class="tab0_header">Transportation costs</p>
+                    <p class="tab0_ddescription">
+                      Enter your expenses using whole numbers, then select a
+                      frequency. All fields are optional.
+                    </p>
 
-                <!-- Extras  -->
-                <div id="tab2" class="budget_stepper_form">
-                  <p class="tab0_header">Estimate your transportation costs</p>
-                  <p class="tab0_ddescription">
-                    Enter your expenses using whole numbers, then select a
-                    frequency. All fields are optional.
-                  </p>
-                  <form>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Public transit</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Public transit"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Ride-share and taxis</label
-                        >
+                        <label class="text_input_label">Taxis</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
-                          placeholder="Enter Ride-share and taxis"
+                          placeholder="Enter Taxis"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Car- or bike-share services</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Car- or bike-share services "
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
                           >Car loan or lease payments
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Car loan or lease payments"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
 
@@ -644,17 +302,11 @@
                           >Gas and electric vehicle charging
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Gas and electric vehicle charging"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -663,17 +315,11 @@
                           >Car repairs and maintenance
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Car repairs and maintenance"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -682,17 +328,11 @@
                           >Car insurance and registration
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Car insurance and registration"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -701,65 +341,15 @@
                           >Parking and tolls
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Parking and tolls"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
 
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <p class="tab0_header">Estimate your personal spending</p>
+                    <p class="tab0_header">Personal spending</p>
                     <p class="tab0_ddescription">
                       Enter your expenses using whole numbers, then select a
                       frequency. All fields are optional.
@@ -769,17 +359,11 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Social events</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Social events"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -788,102 +372,38 @@
                           >Fitness and sports</label
                         >
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Fitness and sports"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Shopping</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Shopping"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Travel </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Travel 
           "
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
 
-                    <p class="tab0_header">
-                      Estimate how much you plan to save and invest
-                    </p>
+                    <p class="tab0_header">Save and invest</p>
                     <p class="tab0_ddescription">
                       Enter your saving and investing goals using whole numbers,
                       then select a frequency. All fields are optional.
@@ -892,34 +412,22 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Investments</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Investments"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Emergency fund </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Emergency fund"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -928,94 +436,34 @@
                           >Other savings goals
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Other savings goals"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
+                  </div>
 
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                  <!-- Funding  -->
+                  <div id="tab3" class="budget_stepper_form">
+                    <p class="tab0_header">Available money</p>
+                    <p class="tab0_ddescription">
+                      Enter your amounts using whole numbers, then select a
+                      frequency. All fields are optional.
+                    </p>
 
-                <!-- Funding  -->
-                <div id="tab3" class="budget_stepper_form">
-                  <p class="tab0_header">
-                    Determine the money you have available
-                  </p>
-                  <p class="tab0_ddescription">
-                    Enter your amounts using whole numbers, then select a
-                    frequency. All fields are optional.
-                  </p>
-                  <form>
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
                           >Employment income</label
                         >
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Employment income"
                         />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
                       </div>
                     </div>
                     <div style="display: flex; align-items: flex-end">
@@ -1024,436 +472,325 @@
                           >Family contributions
                         </label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Family contributions"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">RESPs</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter RESPs"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Scholarships</label>
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Scholarships"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Grants and bursaries</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Grants and bursaries"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label">Existing savings</label>
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Existing savings"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
                           >Government student loans</label
                         >
                         <input
+                          class="budget_title"
                           type="number"
                           class="fullWidth"
                           placeholder="Enter Government student loans"
                         />
                       </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
                     </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <label class="text_input_label"
-                          >Student lines of credit</label
-                        >
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Student lines of credit"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div style="display: flex; align-items: flex-end">
-                      <div class="budget_fees">
-                        <input
-                          type="text"
-                          class="fullWidth"
-                          style="margin-bottom: 10px"
-                          placeholder="Other"
-                        />
-                        <input
-                          type="number"
-                          class="fullWidth"
-                          placeholder="Enter Fees"
-                        />
-                      </div>
-                      <div>
-                        <select style="width: 150px">
-                          <option>Annually</option>
-                          <option>Monthly</option>
-                          <option>Biweekly</option>
-                        </select>
-                      </div>
-                    </div>
-                  </form>
-                </div>
+                  </div>
 
-                <!-- Results  -->
-                <div id="tab4" class="budget_stepper_form">
-                  <p class="tab0_header">Budget breakdown</p>
-                  <h5>Compare your costs and available money</h5>
-                  <hr />
+                  <!-- Results  -->
+                  <div id="tab4" class="budget_stepper_form">
+                    <p class="tab0_header">Budget breakdown</p>
+                    <h5>Compare your costs and available money</h5>
+                    <hr />
 
-                  <div class="">
-                    <div class="row">
-                      <div class="col-md-6 col-sm-12">
-                        <div>
+                    <div class="">
+                      <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                          <div>
+                            <div
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <h6>Total costs</h6>
+                              <h5>$334400</h5>
+                            </div>
+                            <hr />
+                          </div>
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <h6>Total costs</h6>
-                            <h5>$334400</h5>
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: green;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Savings and investing</p>
+                            </div>
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
-                          <hr />
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: green;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Savings and investing</p>
-                          </div>
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: lightsteelblue;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Personal Spending</p>
-                          </div>
-
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: blue;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Essentials</p>
-                          </div>
-
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: red;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Housing</p>
-                          </div>
-
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: orange;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>School</p>
-                          </div>
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 col-sm-12">
-                        <div>
                           <div
                             class="d-flex justify-content-between align-items-center"
                           >
-                            <h6>Total available money</h6>
-                            <h5>$334400</h5>
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: lightsteelblue;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Technology</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
-                          <hr />
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: green;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Loans</p>
-                          </div>
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: lightsteelblue;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Savings and other sources</p>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: blue;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Food</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
 
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: red;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Housing</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: orange;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>School</p>
+                            </div>
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: green;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Transportation</p>
+                            </div>
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: lightsteelblue;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Personal spending</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
                         </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
+
+                        <div class="col-md-6 col-sm-12">
+                          <div>
                             <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: blue;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Grants</p>
+                              class="d-flex justify-content-between align-items-center"
+                            >
+                              <h6>Total available money</h6>
+                              <h5>$334400</h5>
+                            </div>
+                            <hr />
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: green;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Government Loans</p>
+                            </div>
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: lightsteelblue;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Employment Income</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: blue;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Scholarships</p>
+                            </div>
+
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
 
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
+                          <div
+                            class="d-flex justify-content-between align-items-center"
+                          >
+                            <div class="d-flex">
+                              <div
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  border-radius: 100%;
+                                  background-color: red;
+                                  margin-right: 10px;
+                                "
+                              ></div>
+                              <p>Family</p>
+                            </div>
 
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: red;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Family</p>
-                          </div>
-
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
+                            <div class="d-flex gap-5">
+                              <p>0%</p>
+                              <p>$0</p>
+                            </div>
                           </div>
                         </div>
                         <div
-                          class="d-flex justify-content-between align-items-center"
+                          class="d-flex align-items-center justify-content-center mt-5"
                         >
-                          <div class="d-flex">
-                            <div
-                              style="
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 100%;
-                                background-color: orange;
-                                margin-right: 10px;
-                              "
-                            ></div>
-                            <p>Employment</p>
+                          <div
+                            class="bg-secondary-subtle px-5"
+                            style="
+                              display: flex;
+                              align-items: center;
+                              height: 100px;
+                              gap: 10px;
+                            "
+                          >
+                            <p class="mb-0">Extra cash:</p>
+                            <p class="fw-bold mb-0 fs-4">$122,333</p>
                           </div>
-                          <div class="d-flex gap-5">
-                            <p>0%</p>
-                            <p>$0</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="d-flex align-items-center justify-content-center mt-5"
-                      >
-                        <div
-                          class="bg-secondary-subtle px-5"
-                          style="
-                            display: flex;
-                            align-items: center;
-                            height: 100px;
-                            gap: 10px;
-                          "
-                        >
-                          <p class="mb-0">Extra cash:</p>
-                          <p class="fw-bold mb-0 fs-4">$122,333</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="budget_buttons">
-                  <button class="budget_prev_button outline">Back</button>
-                  <button class="budget_next_button">Next</button>
-                </div>
+                  <div class="budget_buttons">
+                    <button class="budget_prev_button outline">Back</button>
+                    <button class="budget_next_button">Next</button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
