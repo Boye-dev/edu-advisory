@@ -103,17 +103,18 @@
                       >
                       <input
                         type="text"
-                        class="budget_title"
+                        class="budget_title mb-3"
+                        name="budgetTitle"
                         placeholder="Enter Title"
                       />
                     </div>
 
-                    <div>
+                    <div class="budget_fees">
                       <label class="text_input_label">Tuition</label>
                       <input
-                        class="budget_title"
                         type="number"
-                        class="fullWidth"
+                        class="budget_title mb-3"
+                        name="tuition"
                         placeholder="Enter Tuition"
                       />
                     </div>
@@ -121,27 +122,27 @@
                     <div class="budget_fees">
                       <label class="text_input_label">Course Materials</label>
                       <input
-                        class="budget_title"
                         type="number"
-                        class="fullWidth"
+                        class="budget_title mb-3"
+                        name="courseMaterials"
                         placeholder="Enter Course Materials"
                       />
                     </div>
 
                     <div class="budget_fees">
                       <label class="text_input_label"
-                        >Laptop,tools and technology</label
+                        >Laptop, tools, and technology</label
                       >
                       <input
-                        class="budget_title"
                         type="number"
-                        class="fullWidth"
+                        class="budget_title mb-3"
+                        name="laptopTechnology"
                         placeholder="Enter Additional Fees"
                       />
                     </div>
                   </div>
 
-                  <!-- Expennses  -->
+                  <!-- Expenses -->
                   <div id="tab1" class="budget_stepper_form">
                     <p class="tab0_header">Housing costs</p>
                     <p class="tab0_ddescription">
@@ -158,9 +159,10 @@
                     <div class="budget_fees">
                       <label class="text_input_label">Rent</label>
                       <input
-                        class="budget_title"
+                        class="budget_title mb-3"
                         type="number"
-                        class="fullWidth"
+                        class="budget_title mb-3"
+                        name="rent"
                         placeholder="Enter Residence fees"
                       />
                     </div>
@@ -168,12 +170,14 @@
                     <div class="budget_fees">
                       <label class="text_input_label">Feeding</label>
                       <input
-                        class="budget_title"
+                        class="budget_title mb-3"
                         type="number"
-                        class="fullWidth"
+                        class="budget_title mb-3"
+                        name="feeding"
                         placeholder="Enter Meal plan"
                       />
                     </div>
+
                     <p class="tab0_header">Food costs</p>
                     <p class="tab0_ddescription">
                       Enter your expenses using whole numbers, then select a
@@ -184,9 +188,10 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Groceries</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="groceries"
                           placeholder="Enter Groceries"
                         />
                       </div>
@@ -198,24 +203,26 @@
                           >Cafés and coffee shops</label
                         >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
-                          placeholder="Enter Cafés and coffee shops "
+                          class="budget_title mb-3"
+                          name="cafes"
+                          placeholder="Enter Cafés and coffee shops"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Restaurants (dine-in, delivery or takeout)
-                        </label>
+                          >Restaurants (dine-in, delivery or takeout)</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
-                          placeholder="Enter Restaurants 
-        "
+                          class="budget_title mb-3"
+                          name="restaurants"
+                          placeholder="Enter Restaurants"
                         />
                       </div>
                     </div>
@@ -225,33 +232,37 @@
                       Enter your expenses using whole numbers, then select a
                       frequency. All fields are optional.
                     </p>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Phone</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="phone"
                           placeholder="Enter Phone"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Streaming services
-                        </label>
+                          >Streaming services</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="streamingServices"
                           placeholder="Enter Streaming services"
                         />
                       </div>
                     </div>
                   </div>
 
-                  <!-- Extras  -->
+                  <!-- Extras -->
                   <div id="tab2" class="budget_stepper_form">
                     <p class="tab0_header">Transportation costs</p>
                     <p class="tab0_ddescription">
@@ -263,20 +274,23 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Public transit</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="publicTransit"
                           placeholder="Enter Public transit"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Taxis</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="taxis"
                           placeholder="Enter Taxis"
                         />
                       </div>
@@ -285,12 +299,13 @@
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Car loan or lease payments
-                        </label>
+                          >Car loan or lease payments</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="carLoanLease"
                           placeholder="Enter Car loan or lease payments"
                         />
                       </div>
@@ -299,51 +314,58 @@
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Gas and electric vehicle charging
-                        </label>
+                          >Gas and electric vehicle charging</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="gasElectricCharging"
                           placeholder="Enter Gas and electric vehicle charging"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Car repairs and maintenance
-                        </label>
+                          >Car repairs and maintenance</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="carRepairsMaintenance"
                           placeholder="Enter Car repairs and maintenance"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Car insurance and registration
-                        </label>
+                          >Car insurance and registration</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="carInsuranceRegistration"
                           placeholder="Enter Car insurance and registration"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Parking and tolls
-                        </label>
+                          >Parking and tolls</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="parkingTolls"
                           placeholder="Enter Parking and tolls"
                         />
                       </div>
@@ -359,46 +381,52 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Social events</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="socialEvents"
                           placeholder="Enter Social events"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
                           >Fitness and sports</label
                         >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="fitnessSports"
                           placeholder="Enter Fitness and sports"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Shopping</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="shopping"
                           placeholder="Enter Shopping"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
-                        <label class="text_input_label">Travel </label>
+                        <label class="text_input_label">Travel</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
-                          placeholder="Enter Travel 
-          "
+                          class="budget_title mb-3"
+                          name="travel"
+                          placeholder="Enter Travel"
                         />
                       </div>
                     </div>
@@ -408,37 +436,43 @@
                       Enter your saving and investing goals using whole numbers,
                       then select a frequency. All fields are optional.
                     </p>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label">Investments</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="investments"
                           placeholder="Enter Investments"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
-                        <label class="text_input_label">Emergency fund </label>
+                        <label class="text_input_label">Emergency fund</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="emergencyFund"
                           placeholder="Enter Emergency fund"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Other savings goals
-                        </label>
+                          >Other savings goals</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
-                          class="fullWidth"
+                          class="budget_title mb-3"
+                          name="otherSavingsGoals"
                           placeholder="Enter Other savings goals"
                         />
                       </div>
@@ -459,22 +493,25 @@
                           >Employment income</label
                         >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3 mb-3"
                           type="number"
                           class="fullWidth"
+                          name="employmentIncome"
                           placeholder="Enter Employment income"
                         />
                       </div>
                     </div>
+
                     <div style="display: flex; align-items: flex-end">
                       <div class="budget_fees">
                         <label class="text_input_label"
-                          >Family contributions
-                        </label>
+                          >Family contributions</label
+                        >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
                           class="fullWidth"
+                          name="familyContributions"
                           placeholder="Enter Family contributions"
                         />
                       </div>
@@ -484,9 +521,10 @@
                       <div class="budget_fees">
                         <label class="text_input_label">Scholarships</label>
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
                           class="fullWidth"
+                          name="scholarships"
                           placeholder="Enter Scholarships"
                         />
                       </div>
@@ -498,9 +536,10 @@
                           >Government student loans</label
                         >
                         <input
-                          class="budget_title"
+                          class="budget_title mb-3"
                           type="number"
                           class="fullWidth"
+                          name="governmentStudentLoans"
                           placeholder="Enter Government student loans"
                         />
                       </div>
