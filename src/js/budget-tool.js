@@ -1,27 +1,49 @@
-const urlParams = new URLSearchParams(window.location.search);
-let tab = urlParams.get("activeTab");
-
-if (!tab) {
-  const urlParams = new URLSearchParams(window.location.search);
-  urlParams.set("activeTab", "0");
-  window.location.search = urlParams;
-} else {
-  console.log(Number.isNaN(tab));
-  if (Number(tab) > 4 || Number(tab) < 0 || Number.isNaN(Number(tab))) {
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set("activeTab", "0");
-    window.location.search = urlParams;
-  }
-}
-let activeTab = Number(tab) || 0;
+let activeTab = 0;
 let tabs = document.querySelectorAll(".budget_stepper_item_body");
-const displayStepper = (activeTab) => {
+const displayStepper = (prev, activeTab) => {
   const stepperBody = document.querySelector(
     `.budget_stepper_body #tab${activeTab}`
   );
-  if (stepperBody) stepperBody.style.display = "contents";
+  const stepperBodyPrev = document.querySelector(
+    `.budget_stepper_body #tab${prev}`
+  );
+  if (stepperBody) {
+    stepperBody.style.display = "contents";
+    if (stepperBodyPrev) {
+      stepperBodyPrev.style.display = "none";
+    }
+  }
 };
-
+const adjustButton = () => {
+  switch (activeTab) {
+    case 0:
+      budget_prev_button.setAttribute("disabled", true);
+      budget_next_button.style.display = "block";
+      budget_next_button.innerText = "Next";
+      break;
+    case 1:
+      budget_prev_button.removeAttribute("disabled");
+      budget_next_button.style.display = "block";
+      budget_next_button.innerText = "Next";
+      break;
+    case 2:
+      budget_prev_button.removeAttribute("disabled");
+      budget_next_button.style.display = "block";
+      budget_next_button.innerText = "Next";
+      break;
+    case 3:
+      budget_prev_button.removeAttribute("disabled");
+      budget_next_button.style.display = "block";
+      budget_next_button.innerText = "Finish";
+      break;
+    case 4:
+      budget_prev_button.removeAttribute("disabled");
+      budget_next_button.style.display = "none";
+      break;
+    default:
+      break;
+  }
+};
 const designTabs = (tab) => {
   if (Number(tab.id) < activeTab) {
     const numberElement = tab.firstElementChild.firstElementChild;
@@ -74,43 +96,40 @@ tabs.forEach((tab) => {
 
   tab.addEventListener("click", (e) => {
     e.stopPropagation();
+    const prev = activeTab;
+
     activeTab = Number(e.currentTarget.id);
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set("activeTab", activeTab);
-    window.location.search = urlParams;
+    adjustButton();
+    displayStepper(prev, activeTab);
+
     showActivetabs(e.currentTarget);
   });
 });
-displayStepper(activeTab);
 
 const budget_next_button = document.querySelector(".budget_next_button");
 const budget_prev_button = document.querySelector(".budget_prev_button");
+displayStepper(null, activeTab);
+adjustButton();
 
-budget_next_button.addEventListener("click", () => {
+budget_next_button.addEventListener("click", (e) => {
   if (activeTab < 4) {
+    const prev = activeTab;
     activeTab += 1;
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set("activeTab", activeTab);
-    window.location.search = urlParams;
+    adjustButton();
+    displayStepper(prev, activeTab);
+
     showActivetabs(e.currentTarget);
   }
 });
-if (activeTab === 0) {
-  budget_prev_button.setAttribute("disabled", true);
-}
-if (activeTab === 3) {
-  budget_next_button.innerText = "Finish";
-}
-if (activeTab === 4) {
-  budget_next_button.style.display = "none";
-}
+
 budget_prev_button.addEventListener("click", (e) => {
   if (activeTab !== 0) {
-    activeTab -= 1;
+    const prev = activeTab;
 
-    const urlParams = new URLSearchParams(window.location.search);
-    urlParams.set("activeTab", activeTab);
-    window.location.search = urlParams;
+    activeTab -= 1;
+    displayStepper(prev, activeTab);
+    adjustButton();
+
     showActivetabs(e.currentTarget);
   }
 });
