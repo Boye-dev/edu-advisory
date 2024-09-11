@@ -108,17 +108,21 @@ tabs.forEach((tab) => {
 
 const budget_next_button = document.querySelector(".budget_next_button");
 const budget_prev_button = document.querySelector(".budget_prev_button");
+const budgetForm = document.getElementById("budgetForm");
+
 displayStepper(null, activeTab);
 adjustButton();
 
 budget_next_button.addEventListener("click", (e) => {
-  if (activeTab < 4) {
+  if (activeTab < 3) {
     const prev = activeTab;
     activeTab += 1;
     adjustButton();
     displayStepper(prev, activeTab);
 
     showActivetabs(e.currentTarget);
+  } else {
+    budgetForm.submit();
   }
 });
 

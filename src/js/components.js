@@ -13,11 +13,11 @@ if (modals) {
   });
 }
 
-const forms = document.querySelectorAll("form");
-if (forms) {
-  forms.forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-    });
-  });
-}
+// const forms = document.querySelectorAll("form");
+// if (forms) {
+//   forms.forEach((form) => {
+//     form.addEventListener("submit", (e) => {
+//       e.preventDefault();
+//     });
+//   });
+// }
